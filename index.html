@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
         * {
             margin: 0;
@@ -97,26 +99,23 @@
             margin-top: 20px;
             margin-right: 14px;
             padding: 12px 22px;
-            border-radius: 4px;
+            border-radius: 25px;
             text-decoration: none;
             font-weight: 400;
             background: #e67622;
             color: #fff;
-            border-radius: 25px;
         }
 
         .ad.sec {
             background: transparent;
             border: 2px solid #e67622;
             color: #e67622;
-            border-radius: 25px;
         }
 
         .ad.sec:hover {
             background-color: #e67622;
             color: white;
         }
-
 
         div h1 {
             margin-top: 0;
@@ -126,6 +125,105 @@
             text-transform: uppercase;
         }
 
+        .ae {
+            font-size: 180%;
+            word-spacing: 2px;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        section {
+            padding: 75px 0;
+        }
+
+        .ag {
+            font-size: 180%;
+            word-spacing: 2px;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            line-height: 145%;
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        h2:after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: "  ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .aj {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .ah {
+            flex: 1;
+            min-width: 220px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .ai {
+            font-size: 340%;
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        h2,
+        h3 {
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .aa p {
+            font-size: 20px;
+        }
+
+        .meal-display {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .meal-display li {
+            display: block;
+            float: left;
+            width: 25%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mealpic {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mealpic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            transform: scale(1.15);
+        }
+
+        .mealpic:hover img {
+            transform: scale(1);
+        }
+        
     </style>
 </head>
 
@@ -144,12 +242,91 @@
         </nav>
 
         <div class="ab">
-            <h1>Goodbye junk food. <br> Hello super healthy meals.
-</h1>
+            <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
             <a class="ad" href="#">I'm hungry</a>
             <a class="ad sec" href="#">Show me more</a>
         </div>
     </header>
+
+    <section>
+        <div class="aa">
+            <h2 class="ae">Get food fast — not fast food</h2>
+            <p class="ag">
+                Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No
+                time for cooking. So let us take care of that, we’re really good at it, we promise!
+            </p>
+
+            <div class="aj">
+                <div class="ah">
+                    <ion-icon class="ai" name="infinite-outline"></ion-icon>
+                    <h3>Up to 365 days/year</h3>
+                    <p>Never cook again! Our subscription plans include up to 365 days/year coverage.</p>
+                </div>
+                <div class="ah">
+                    <ion-icon class="ai" name="timer-outline"></ion-icon>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>Get healthy meals delivered to your door faster than ordering takeaway.</p>
+                </div>
+                <div class="ah">
+                    <ion-icon class="ai" name="leaf-outline"></ion-icon>
+                    <h3>100% organic</h3>
+                    <p>We only use organic, fresh ingredients in all of our meals.</p>
+                </div>
+                <div class="ah">
+                    <ion-icon class="ai" name="cart-outline"></ion-icon>
+                    <h3>Order anything</h3>
+                    <p>Choose from a variety of 100+ delicious dishes every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <ul class="meal-display">
+            <li>
+                <div class="mealpic">
+                    <img src="img/1.jpg" alt="korean soup">
+                </div>
+            </li>
+            <li>
+                <div class="mealpic">
+                    <img src="img/2.jpg" alt="italian pizza">
+                </div>
+            </li>
+            <li>
+                <div class="mealpic">
+                    <img src="img/3.jpg" alt="chicken and carrots">
+                </div>
+            </li>
+            <li>
+                <div class="mealpic">
+                    <img src="img/4.jpg" alt="pumpkin soup">
+                </div>
+            </li>
+
+            <li>
+                <div class="mealpic">
+                    <img src="img/5.jpg" alt="steak and veg">
+                </div>
+            </li>
+            <li>
+                <div class="mealpic">
+                    <img src="img/6.jpg" alt="baguette and egg">
+                </div>
+            </li>
+            <li>
+                <div class="mealpic">
+                    <img src="img/7.jpg" alt="burger">
+                </div>
+            </li>
+            <li>
+                <div class="mealpic">
+                    <img src="img/8.jpg" alt="granola">
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
 </body>
 
 </html>
