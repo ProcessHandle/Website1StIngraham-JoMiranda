@@ -341,6 +341,61 @@
             color: #e67e22;
             text-decoration: underline;
         }
+
+        .az {
+            background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/back-customers.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        .ba {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            margin-top: 38px;
+        }
+
+        .bb {
+            position: relative;
+            line-height: 145%;
+            padding: 2%;
+        }
+
+        .bb:before {
+            content: "\201C";
+            font-size: 500%;
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+        }
+
+        .bb p {
+            margin-bottom: 18px;
+        }
+
+        .bc {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            font-style: normal;
+            opacity: .95;
+        }
+
+        .bd {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .be {
+            font-size: 90%;
+            letter-spacing: .3px;
+        }
     </style>
 </head>
 
@@ -567,6 +622,49 @@
         </div>
     </section>
 
+    <section class="az">
+        <div class="aa">
+            <h2 class="af">Our customers can't live without us</h2>
+
+            <div class="ba">
+                <div class="bb">
+                    <p>
+                        Omnifood is just awesome! I just launched a startup which leaves me with no time for
+                        cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without
+                        my daily meals!
+                    </p>
+                    <div class="bc">
+                        <img class="bd" src="img/customer-1.jpg" alt="Alberto Duncan">
+                        <span class="be">Alberto Duncan</span>
+                    </div>
+                </div>
+
+                <div class="bb">
+                    <p>
+                        Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of
+                        food delivery here in Lisbon, but no one comes even close to Omnifood. Me and my family
+                        are so in love!
+                    </p>
+                    <div class="bc">
+                        <img class="bd" src="img/customer-2.jpg" alt="Joana Silva">
+                        <span class="be">Joana Silva</span>
+                    </div>
+                </div>
+
+                <div class="bb">
+                    <p>
+                        I was looking for a quick and easy food delivery service in San Francisco. I tried a lot of
+                        them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the
+                        great work!
+                    </p>
+                    <div class="bc">
+                        <img class="bd" src="img/customer-3.jpg" alt="Milton Chapman">
+                        <span class="be">Milton Chapman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
